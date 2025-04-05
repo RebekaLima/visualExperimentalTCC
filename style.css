@@ -33,7 +33,7 @@ body {
     background: #f7ecd6;
     display: flex;
     align-items: center; 
-    color: #533c2c; 
+    color: #da6037; 
     text-align: center;
     padding: 40px;
     z-index: 1;
@@ -105,10 +105,10 @@ form {
 .btn {
     width: 72%;
     height: 48px;
-    background: #533c2c;
+    background: #da6037;
     color: #ffffff;
     border-radius: 8px;
-    border: 4px solid #533c2c;
+    border: 4px solid #da6037;
     image-rendering: pixelated;      
     box-shadow: 4px 4px 0px #000000;
     cursor: pointer;
@@ -126,7 +126,7 @@ form {
     left: -250%;
     width: 300%;
     height: 100%;
-    background: #533c2c;
+    background: #bb4e29;
     border-radius: 150px;
     z-index: 2;
     transition: 1.8s ease-in-out;
@@ -188,7 +188,7 @@ form {
     width: 72%;
     height: 48px;
     background: #f7ecd6;
-    color: #533c2c;
+    color: #bb4e29;
     border-radius: 8px;
     border: 4px solid #f7ecd6;
     image-rendering: pixelated;      
@@ -200,7 +200,7 @@ form {
     width: 72%;
     height: 48px;
     background: #f7ecd6;
-    color: #533c2c;
+    color: #bb4e29;
     border-radius: 8px;
     border: 4px solid #f7ecd6;
     image-rendering: pixelated;      
