@@ -1,14 +1,17 @@
-const container = document.querySelector('.container');
+// Seleciona todas as abas e o container do slider
+const tabs = document.querySelectorAll('.tabs li');
+const slider = document.querySelector('.slider');
 
-const registerBtn = document.querySelector('.register-btn');
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    // Remove a classe 'active' de todas as abas
+    tabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
 
-const loginBtn = document.querySelector('.login-btn');
-
-
-registerBtn.addEventListener('click', () => {
-    container.classList.add('active');
-})
-
-loginBtn.addEventListener('click', () => {
-    container.classList.remove('active');
-})
+    // Obtém o índice da aba clicada
+    const index = parseInt(tab.getAttribute('data-index'));
+    // Calcula a porcentagem para deslocar o slider
+    const percentage = -(index * (100 / tabs.length));
+    slider.style.transform = `translateX(${percentage}%)`;
+  });
+});

@@ -1,69 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Helenão</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Helenão</title>
 </head>
 <body>
-        <div class="container">
-            <div class="form-box login">
-                <form action="">
-                    <h1>Login</h1>
-                    <div class="input-box">
-                        <input type="text" placeholder="E-mail" required>
-                    </div>
 
-                    <div class="input-box">
-                        <input type="password" placeholder="Senha" required>                    </div>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <h2><img class="icon" src="img/icon.png" alt="Logo">Helenão</h2>
+      <ul class="navbar-links">
+        <li><a class="text-nav" href="#">Home</a></li>
+        <li><a class="text-nav" href="#">Sobre nós</a></li>
+        <li><a class="text-nav" href="/pages/login-register/index.html">Logar ou cadastrar</a></li>
+      </ul>
+    </div>
+  </nav>
 
-                    <div class="forgot-link">
-                        <a href="#">Esqueceu a senha?</a>
-                    </div>
+  <div class="container">
+    <div class="tab-container">
 
-                    <button type="submit"  class="btn">Entrar</button>
+      <ul class="tabs">
+        <li data-index="0" class="active">Início</li>
+        <li data-index="1">Aulas</li>
+        <li data-index="2">Cronogramas</li>
+        <li data-index="3">FlashCards</li>
+        <li data-index="4">Simulados</li>
+        <li data-index="5">Pomodoro</li>
+        <li data-index="6">Leituras</li>
+      </ul>
 
-                </form>
+      <div class="tab-content">
+        <div class="slider">
+          <div class="content">
+            <h1 class="title">Plataforma gratuita de preparação para o ENEM!</h1>
+            <div class="row-content">
+              <img src="/img/home.png" alt="Imagem ilustrativa">
+              <p>Bem-vindo ao nosso site! Somos estudantes de desenvolvimento da ETEC JK e criamos este espaço para facilitar seus estudos. Aqui você encontra simulados, cronogramas, flashcards, pomodoros e um menu de leituras para te ajudar a organizar o conhecimento e conquistar seus objetivos.</p>
             </div>
-
-            <div class="container">
-                <div class="form-box register">
-                    <form action="">
-                        <h1>Cadastre-se</h1>
-                        <div class="input-box">
-                            <input type="text" placeholder="Usuário" required>
-                        </div>
-                        
-                        <div class="input-box">
-                            <input type="text" placeholder="E-mail" required>
-                        </div>
-
-                        <div class="input-box">
-                            <input type="password" placeholder="Senha" required>                    </div>
-    
-                        <button type="submit"  class="btn">Cadastrar</button>
-    
-                    </form>
-                </div>
-
-                <div class="toggle-box">
-
-                    <div class="toggle-panel toggle-left">
-                        <h1 class="h1 register">Não tem uma conta? Cadastre-se!</h1>
-                        <img src="img/cadastro.png">
-                        <button class="btn register-btn">Cadastre-se</button>
-                    </div>
-
-                    <div class="toggle-panel toggle-right">
-                        <h1 class="h1 login">Já tem uma conta? Vamos logar!</h1>
-                        <img src="img/login.png">
-                        <button class="btn login-btn">Logar</button>
-                    </div>
-
-                </div>
+          </div>
+          <div class="content">
+            <h1 class="title">Aulas</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia ipsum repellat error, sint a qui! Nesciunt corporis recusandae voluptatibus vel, earum eligendi repudiandae error, magni nihil dolore doloremque. Fugit, totam?</p>
+          </div>
+          <div class="content">
+            <h1 class="title">Cronogramas</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia ipsum repellat error, sint a qui! Nesciunt corporis recusandae voluptatibus vel, earum eligendi repudiandae error, magni nihil dolore doloremque. Fugit, totam?</p>
+          </div>
+          <div class="content">
+            <h1 class="title">FlashCards</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia ipsum repellat error, sint a qui! Nesciunt corporis recusandae voluptatibus vel, earum eligendi repudiandae error, magni nihil dolore doloremque. Fugit, totam?</p>
+          </div>
+          <div class="content">
+            <h1 class="title">Simulados</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia ipsum repellat error, sint a qui! Nesciunt corporis recusandae voluptatibus vel, earum eligendi repudiandae error, magni nihil dolore doloremque. Fugit, totam?</p>
+          </div>
+          <div class="content">
+            <h1 class="title">Pomodoro</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia ipsum repellat error, sint a qui! Nesciunt corporis recusandae voluptatibus vel, earum eligendi repudiandae error, magni nihil dolore doloremque. Fugit, totam?</p>
+          </div>
+          <div class="content">
+            <h1 class="title">Leituras</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia ipsum repellat error, sint a qui! Nesciunt corporis recusandae voluptatibus vel, earum eligendi repudiandae error, magni nihil dolore doloremque. Fugit, totam?</p>
+          </div>
         </div>
-        <script src="script.js"></script>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Helenão. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
